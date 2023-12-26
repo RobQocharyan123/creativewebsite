@@ -1,0 +1,223 @@
+:root{
+    --button-normal:  rgba(108, 92, 231, 1);
+    --button-hover: rgb(43, 28, 151);
+    --button-pressed: rgb(16, 8, 77);
+    --header-fonts:
+    rgba(108, 92, 231, 1);
+    --header-fonts-hover:
+    rgba(45, 52, 54, 1);
+    --white:
+    rgba(255, 255, 255, 1);
+    --black:rgba(45, 52, 54, 1);
+    --yellow:rgba(253, 203, 110, 1);
+    --yellow-footer:rgba(255, 234, 167, 1);
+    --gray:rgba(173, 173, 173, 1);
+    --gray-input:#F0F0F0;
+    --pink-delivering:
+    rgba(232, 67, 147, 1);
+    --pricing-gray-checkbox:
+    rgba(194, 194, 194, 1);
+    --pricing-dark-checkbox:
+    rgba(253, 203, 110, 1);
+    --pricing-blue-checkbox:rgba(85, 239, 196, 1);
+    --red-fineImage-title:
+    rgba(214, 48, 49, 1);
+  }
+  
+
+
+  .delivering{
+  padding: 10px 50px;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .delivering-first{
+    width: 80%;
+
+  }
+
+  
+  .delivering-first h3{
+   font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    color: var(--black);
+  }
+
+  .delivering-first p{
+    font-weight: 400;
+     font-size: 24px;
+     line-height: 36px;
+     letter-spacing: -0.25px;
+     color: var(--black);
+   }
+
+
+   .delivering-second{
+
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+   }
+
+   .delivering-second div{
+    
+   }
+   .support{
+        width: 23%;
+        
+
+  }
+  .sales{
+        width: 23%;
+
+  }
+
+  .driven{
+        width: 23%;
+
+  }
+
+  .swap{
+        width: 23%;
+
+  }
+
+   .delivering-second img{
+     padding: 10px;
+     background-color: cyan;
+     border-radius: 50px;
+   }
+
+   .delivering-second h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.25px;
+    color: var(--black);
+    margin-top:10px;
+  }
+
+  .delivering-second p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--black);
+    margin-top:10px;
+  }
+
+  .delivering-second .button{
+    margin-top: 10px;
+    width: 50%;
+  }
+
+  .delivering-second button{
+    background-color: var(--white) !important;
+    color: var(--button-normal);
+    border: 1px solid var(--gray);
+  }
+
+  .delivering-second button:hover{
+    background-color: var(--button-normal) !important;
+    color: var(--white);
+    transition: all .5s ease-in-out;
+  }
+
+.sales img{
+    width: 50px;
+    background-color: blue;
+}
+
+.driven img{
+    background-color: var(--button-normal);
+}
+.swap img{
+    background-color: green;
+}
+
+.delivering-text{
+    width: 100% !important;
+}
+
+@media screen and (max-width: 600px) {
+
+  .delivering-second{
+    grid-template-columns: repeat(2, 1fr)
+  }
+  .support{
+    flex: 1 1 160px;
+  }
+  .sales{
+    flex: 1 1 160px;
+  }
+
+  .driven{
+    flex: 1 1 160px;
+  }
+
+  .swap{
+    flex: 1 1 160px;
+  }
+}
+
+@media screen and (max-width:500px){
+  
+
+  .delivering-second p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    color: var(--black);
+    margin-top: 10px;
+}
+.delivering-second h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.25px;
+  color: var(--black);
+  margin-top: 10px;
+}
+  .delivering-second .button .bt {
+    width: 97%;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    /* padding: 2px 0 5px 0; */
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--button-normal) !important;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 28px;
+}
+}
+
+@media screen and (max-width: 1080px) {
+  .support{
+    width: 40%;
+    
+
+}
+.sales{
+    width: 40%;
+
+}
+
+.driven{
+    width: 40%;
+
+}
+
+.swap{
+    width: 40%;
+
+}
+}
+
